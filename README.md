@@ -7,18 +7,17 @@ You need to create an API calls to perform the following functionalities-
 
 3. Create an GET API for to fetch data from DB with pagination. Display the data in a simple UI.
 
-![image](https://user-images.githubusercontent.com/15993389/129461406-29a5921f-d2b2-446b-b349-05a2d6c26f71.png)
 
 
 ## To Import Data
 
-Direct From Url : BASE_URL + /import_from_url
-Uplaod File : BASE_URL + /import
-Listing : BASE_URL + /pincodes
+1. Direct From Url : BASE_URL + /import_from_url
+2. Uplaod File : BASE_URL + /import
+3. Listing : BASE_URL + /pincodes
 
 ## Migration And Queue
-For Migration :  Php artisan Migrate
-For Run Job :  php artisan queue:work
+1. For Migration :  Php artisan Migrate
+2. For Run Job :  php artisan queue:work
 
 
 
