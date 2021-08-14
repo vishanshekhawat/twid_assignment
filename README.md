@@ -1,24 +1,26 @@
-# Lumen PHP Framework
+# Twid Assignment
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+You need to create an API calls to perform the following functionalities-
+1. Fetch the data from the following URL - "http://data.gov.in/sites/default/files/all_india_pin_code.csv" and save it in MySql.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+2. Create a migration file to create the table.
 
-## Official Documentation
+3. Create an GET API for to fetch data from DB with pagination. Display the data in a simple UI.
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+![image](https://user-images.githubusercontent.com/15993389/129461406-29a5921f-d2b2-446b-b349-05a2d6c26f71.png)
 
-## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## To Import Data
 
-## Security Vulnerabilities
+Direct From Url : BASE_URL + /import_from_url
+Uplaod File : BASE_URL + /import
+Listing : BASE_URL + /pincodes
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+## Migration And Queue
+For Migration :  Php artisan Migrate
+For Run Job :  php artisan queue:work
 
-## License
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
