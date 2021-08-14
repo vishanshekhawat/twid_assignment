@@ -16,22 +16,13 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
 
 $router->get('import',  ['uses' => 'PinCodeController@import']);
 $router->post('upload',  ['uses' => 'PinCodeController@upload']);
 $router->get('pincodes',  ['uses' => 'PinCodeController@index']);
 $router->get('import_from_url',  ['uses' => 'PinCodeController@importDataFromUrl']);
-//
-//$router->group(['prefix' => 'api'], function () use ($router) {
-//   //  $router->get('pincodes',  ['uses' => 'PinCodeController@pincodes']);
-//   // $router->post('pincodes',  ['uses' => 'PinCodeController@pincodes']);
-//});
 
 $router->group(['prefix' => 'api', 'namespace' => 'Api'], function () use ($router) {
     $router->get('pincodes',  ['uses' => 'PinCodesController@index']);
-//    $router->post('pincodes',  ['uses' => 'PinCodeController@pincodes']);
 });
 
